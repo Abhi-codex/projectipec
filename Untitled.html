@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System</title>
+    <link rel="stylesheet" href="smart.css">
+
+   
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="brand">Smart Irrigation</div>
+        <ul>
+            <li> <a href="Untitled.html">Dashboard</a> </li>
+              <li><a href="setting.html">Settings</a></li>
+               <li>  <a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+  
+  
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+        
+        <div class="card" >
+            <h3>Soil Moisture</h3>
+            <div id="rpmValue" class="rpm-display">Loading...</div>
+            <div class="unit">Percentage</div>
+        </div>
+                  <!-- Farm Parts Selector -->
+    <div class="container">
+        <div class="box" onclick="updateMoistureLevel(45)  ,activateBox(this)">Part 1</div>
+        <div class="box" onclick="updateMoistureLevel(50) ,activateBox(this)">Part 2</div>
+        <div class="box" onclick="updateMoistureLevel(40) ,activateBox(this)">Part 3</div>
+        <div class="box" onclick="updateMoistureLevel(55) ,activateBox(this)">Part 4</div>
+    </div>
+        <div class="card">
+            <h3>Temperature</h3>
+            <div class="value">28°C</div>
+            <div class="unit">Celsius</div>
+        </div>
+        <div class="card">
+            <h3>Humidity</h3>
+            <div class="value">65%</div>
+            <div class="unit">Percentage</div>
+        </div>
+        <div class="card">
+            <h3>Water Level</h3>
+            <div class="value">70%</div>
+            <div class="unit">Percentage</div>
+        </div>
+
+        <div class="card">
+            <h3>Chance of Rain</h3>
+            <div class="value">30%</div>
+            <div class="unit">Percentage</div>
+        </div>
+        <div class="card">
+            <h3>Irrigation status</h3>
+            <div class="value">off</div>
+            <div class="unit"></div>
+        </div>
+        <div class="card">
+            <h3>Location</h3>
+            <div class="value">IPEC</div>
+            <div class="unit">(inderprastha engg college,sahibabad)</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 XYZ Smart Systems</p>
+    </footer>
+
+    
+       
+    <script src="farm.js"></script>    
+
+</body>
+</html>
